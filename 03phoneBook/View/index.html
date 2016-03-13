@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="includes/jquery.min.js"></script>
+    <script src="includes/sweetalert-master-3/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="includes/sweetalert-master-3/dist/sweetalert.css">
+</head>
+<body>
+<header id="mainHeader">
+    <h1>Phone Book</h1>
+</header>
+<!--main container-->
+<div id="mainContainer">
+    <!--main container top-->
+    <div id="mainContainerTopBar">
+        <h3 id="currentGroupName"></h3>
+        <input type="text" class="appInput searchInput" id="searchInput" placeholder="enter for search contact..."/>
+        <input type="button" id="search" class="search" value="Search">
+    </div>
+    <!--button container-->
+    <div id="appControllerButtonsContainer">
+        <input type="button" id="deleteButton" class="appControllerButtons" value="Delete Group">
+        <input type="button" id="createGroupButton" class="appControllerButtons" value="Create Group">
+        <input type="button" id="createContactsButton" class="appControllerButtons" value="Create Contacts">
+        <input type="button" id="showContactsButton" class="appControllerButtons" value="Show Contacts">
+    </div>
+    <!-- mainContainerBody-->
+    <div id="mainContainerBody">
+        <!-- main container show mode;-->
+        <div id="showContentsContainer">
+            <h4>Contacts</h4>
+            <!-- table-->
+            <table class="showContentsTable">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Phone</th>
+                    <th>Delete</th>
+                </tr>
+                </thead>
+                <tbody class="contactsTableContainer">
+                <tr>
+                    <td>example id</td>
+                    <td>example firstName</td>
+                    <td>example lastName</td>
+                    <td>example phone</td>
+                    <td>example delete</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--createContactMode-->
+        <div id="createContact" class="invisible">
+            <h4>Create Contacts</h4>
+            <input type="text" class="appInputForAdding" id="contentFirstName" placeholder="enter first name..."/>
+            <input type="text" class="appInputForAdding" id="contentLasttName" placeholder="enter last name..."/>
+            <input type="text" class="appInputForAdding" id="contentPhone" placeholder="enter phone..."/>
+            <input type="button" class="appAddDataButton" id="addContactButton" value="Add Contact">
+        </div>
+        <!--createGroupMode-->
+        <div id="createGroup" class="invisible">
+            <h4>Create Group</h4>
+            <input type="text" class="appInputForAdding" id="contentCreateGroup" placeholder="enter group name..."/>
+            <input type="button" class="appAddDataButton" id="addGroupButton" value="Add Group">
+        </div>
+    </div>
+    <!--left bar-->
+    <div id="leftBar">
+        <h3>Directory</h3>
+        <div id="menuContainer">
+            <input type="text" id="groupSearchInput" placeholder="search group...">
+            <li id="mainGroup">PhoneBook</li>
+            <ul id="directory"></ul>
+        </div>
+        <input type="button" class="appAddDataButton" id="resetAllPhoneBook" value="Reset all phoneBook">
+    </div>
+</div>
+<!--footer-->
+<footer id="mainFooter">
+    <h4>&copy; All right reserved to the greatest phoneBook</h4>
+</footer>
+<script src="../Model/Validator.js"></script>
+<script src="../Model/Storage.js"></script>
+<script src="../Model/Group.js"></script>
+<script src="../Model/Person.js"></script>
+<script src="javaScript/PhoneBookManager.js"></script>
+<script src="javaScript/phoneBookHtmlRenderings.js"></script>
+<script src="javaScript/appController.js"></script>
+<script src="app.js"></script>
+</body>
+
+
+</html>

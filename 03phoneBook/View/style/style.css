@@ -1,0 +1,301 @@
+body {
+    font-family: 'Roboto', Helvetica, Arial, serif;
+}
+
+#mainHeader {
+    width: 100%;
+    height: 80px;
+    border-bottom: solid gainsboro 2px;
+
+}
+
+#mainHeader h1 {
+    float: left;
+}
+
+#mainContainer {
+    width: 100%;
+    height: 650px;
+}
+
+/***************************** leftBar ******************************/
+#leftBar {
+    width: 19%;
+    height: 650px;
+    border-right: solid gainsboro 1px;
+}
+
+#menuContainer {
+    width: 100%;
+    margin-top: 50px;
+    height: 450px;
+    border-right: solid gainsboro 1px;
+    overflow: scroll;
+}
+
+/***************************** topBar ******************************/
+
+#mainContainerTopBar {
+    width: 80%;
+    height: 200px;
+    float: right;
+
+}
+
+#mainContainerTopBar h3 {
+    float: left;
+}
+
+/***************************** appInput ******************************/
+
+.appInput {
+    width: 80%;
+    height: 35px;
+    margin-top: 100px;
+    float: left;
+    clear: both;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    line-height: 32px;
+    font-size: 1em;
+    color: rgba(0, 0, 0, .4);
+    outline: none;
+
+}
+
+.appInputForAdding {
+    width: 100%;
+    height: 35px;
+    margin-top: 15px;
+    float: left;
+    clear: both;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    line-height: 32px;
+    font-size: 1em;
+    color: rgba(0, 0, 0, .4);
+    outline: none;
+}
+
+#groupSearchInput {
+    width: 100%;
+    height: 25px;
+    float: left;
+    clear: both;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    line-height: 32px;
+    font-size: 1em;
+    color: rgba(0, 0, 0, .4);
+    margin-bottom: 5%;
+    outline: none;
+}
+
+td:hover {
+    box-shadow: 0 0 30px #719ECE;
+
+}
+
+#groupSearchInput:focus {
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 30px #719ECE;
+}
+
+.appControllerButtons:focus {
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 30px #719ECE;
+}
+
+.appInputForAdding:focus {
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 30px #719ECE;
+}
+
+.searchInput:focus {
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 30px #719ECE;
+}
+
+li:hover {
+    box-shadow: 0 0 30px lightseagreen;
+}
+
+/***************************** search ******************************/
+.search {
+    width: 19%;
+    height: 40px;
+    margin-top: 100px;
+    float: right;
+    border: 1px solid white;
+    text-align: center;
+    background: #e55c53;
+    border-radius: 4px;
+    color: #fff;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-weight: 600;
+    line-height: 1;
+    padding: 0.625em 2.5em;
+    outline: none;
+
+}
+
+.search:hover {
+    background: #980000;
+    outline: none;
+
+}
+
+/***************************** appAddDataButton ******************************/
+.appAddDataButton {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    float: right;
+    border: 1px solid white;
+    text-align: center;
+    background: #e55c53;
+    border-radius: 4px;
+    color: #fff;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-weight: 600;
+    line-height: 1;
+    padding: 0.625em 2.5em;
+    outline: none;
+
+}
+
+.appAddDataButton:hover {
+    background: #980000;
+    outline: none;
+
+}
+
+/***************************** appControllerButtonsContainer &  appControllerButtons ******************************/
+#appControllerButtonsContainer {
+    width: 80%;
+    float: right;
+    height: 30px;
+}
+
+.appControllerButtons {
+    width: 25%;
+    height: 30px;
+    float: right;
+    border: 1px solid white;
+    text-align: center;
+    background: #428BCA;
+    border-radius: 4px;
+    color: #fff;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    outline: none;
+}
+
+.appControllerButtons:hover {
+    background: #3071A9;
+}
+
+#mainContainerBody {
+    width: 80%;
+    float: right;
+    height: 200px;
+}
+
+/***************************** Show Contents ******************************/
+#showContentsContainer {
+    width: 100%;
+    float: right;
+    height: 200px;
+}
+
+#showContentsContainer h4 {
+    float: left;
+}
+
+/***************************** createContact ******************************/
+#createContact {
+    width: 100%;
+    float: right;
+}
+
+#createContact h4 {
+    float: left;
+}
+
+/***************************** create Group ******************************/
+#createGroup {
+    width: 100%;
+    float: right;
+    height: 200px;
+}
+
+#createContact h4 {
+    float: left;
+}
+
+/***************************** next ******************************/
+
+#mainFooter {
+    width: 100%;
+    height: 100px;
+    border-top: solid gainsboro 2px;
+    clear: both;
+}
+
+.showContentsTable {
+    text-align: left;
+    width: 100%;
+}
+
+.showContentsTable table, th, td {
+    border-bottom: 1px solid gainsboro;
+}
+
+/***************************** show/invisible ******************************/
+.invisible {
+    display: none;
+    visibility: hidden;
+}
+
+.show {
+    display: block;
+    visibility: visible;
+}
+
+li {
+    list-style-type: none;
+    color: #3071A9;
+    font-weight: bold;
+    font-size: large;
+}
+
+ul {
+    font-weight: bold;
+    padding-left: 20px;
+    text-align: left;
+}
+
+#currentGroupName {
+    color: #e55c53;
+}
+
+.deleteContact {
+    color: #e55c53;
+    cursor: pointer;
+}
+
+#mainGroup {
+    color: lightseagreen;
+}
+
+#resetAllPhoneBook{
+    background-color: black;
+    margin-top: 90px;
+    cursor: pointer;
+
+}
