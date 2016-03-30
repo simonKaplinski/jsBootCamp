@@ -1,0 +1,310 @@
+body {
+    font-family: 'Roboto', Helvetica, Arial, serif;
+    overflow:hidden;
+}
+
+
+#mainContainer {
+    width: 50%;
+    margin-top: 2%;
+    margin-right: 25%;
+    margin-left: 25%;
+    height: 1000px;
+    position: relative;
+}
+
+#showItemsContainer {
+    width: 99%;
+    height: 600px;
+    position: absolute;
+    top: 0px;
+}
+
+#createItemsContainer {
+    width: 100%;
+    height: 250px;
+    margin-top: 2%;
+    /*position: absolute;*/
+}
+
+#buttonsContainer {
+    width: 100%;
+    height: 40px;
+    /*position: absolute;*/
+    top: 0px;
+}
+
+#createDataInputs {
+    width: 100%;
+    height: 250px;
+    /*position: absolute;*/
+    bottom: 0px;
+}
+
+/***************************** appControllerButtons ******************************/
+
+.appControllerButtons {
+    width: 50%;
+    height: 40px;
+    float: right;
+    border: 1px solid white;
+    text-align: center;
+    background: #3071A9;
+    border-radius: 4px;
+    color: #fff;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    outline: none;
+}
+
+.appControllerButtons:hover {
+    background: #428BCA;
+}
+/***************************** appAddDataButton ******************************/
+
+.appAddDataButton {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    float: right;
+    border: 1px solid white;
+    text-align: center;
+    background: #e55c53;
+    border-radius: 4px;
+    color: #fff;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-weight: 600;
+    line-height: 1;
+    padding: 0.625em 2.5em;
+    outline: none;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
+
+}
+
+.appAddDataButton:hover {
+    background: #980000;
+    outline: none;
+
+}
+
+.appInputForAdding {
+    width: 100%;
+    height: 35px;
+    margin-top: 15px;
+    float: left;
+    clear: both;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    line-height: 32px;
+    font-size: 1em;
+    color: rgba(0, 0, 0, .4);
+    outline: none;
+}
+
+/***************************** visible/invisible ******************************/
+
+.invisible {
+    display: none;
+    visibility: hidden;
+}
+
+.show {
+    display: block;
+    visibility: visible;
+}
+
+.appInputForAdding:focus {
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 30px #719ECE;
+}
+
+/***************************** upButton ******************************/
+
+#upButton {
+    width: 100%;
+    height: 40px;
+    float: right;
+    border: 1px solid white;
+    text-align: center;
+    background: #428BCA;
+    border-radius: 4px;
+    color: #fff;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    outline: none;
+}
+
+#upButtonContainer {
+    background-color: #428BCA;
+    color: white;
+    text-align: center;
+    height: 45px;
+    font-size: 20px;
+    font-weight: bold
+}
+
+
+#upButtonContainer span{
+    margin-bottom: 5px;
+}
+
+
+
+
+#showItemsContainer ul li {
+    list-style-type: none;
+    margin-bottom: 1%;
+    border-bottom: solid whitesmoke 1px;
+    text-align: center;
+    height: 30px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-weight: 600;
+
+}
+
+.hvr-grow {
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+#showItemsContainer ul li {
+    list-style-type: none;
+    margin-bottom: 1%;
+    border-bottom: solid whitesmoke 1px;
+    text-align: center;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#showItemsContainer ul li:first-child {
+    list-style-type: none;
+    display: none;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-bottom: solid whitesmoke 1px;
+    text-align: center;
+}
+
+/*****************************  ******************************/
+
+#ulContainerForAllItems {
+    padding: 0;
+    height: 250px;
+    overflow: scroll;
+    border: solid gainsboro 1px;
+}
+
+.iconContainer {
+    text-align: center;
+}
+
+.iconContainer p {
+    float: left;
+}
+
+.uiGroupContainer {
+    width: 80%;
+    margin-top: 1%;
+}
+
+/***************************** group icons containers ******************************/
+
+.groupIconContainer {
+    float: left;
+    position: absolute;
+    left: 3%;
+    font-size: 15px;
+    font-weight: bold
+}
+
+.uiContectContainer {
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold
+}
+
+.uiContectContainer p {
+    display: inline-block;
+    width: 23.5%;
+}
+
+.uiContectContainer span {
+    float: right;
+}
+
+/***************************** uiOneContactContainer ******************************/
+
+#uiOneContactContainer img{
+    float: right;
+}
+
+.uiOneContactContainerOnePart{
+    color: darkgray; font-family: 'Open Sans', sans-serif; font-size: 19px; font-weight: 300; line-height:10px; margin: 0 0 15px;;
+}
+
+.uiOneContactContainerOnePart h5 {
+    color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 20px; font-weight: bold; letter-spacing: -1px; line-height: 1;
+    display: inline-block;
+}
+
+#createContact{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+}
+
+#createGroup{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+}
+
+.deleteSpanContainer{
+    width: 20%;
+    color: #e55c53;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: ghostwhite;
+    transition: background-color 1s ease;
+}
+
+.deleteSpanContainer:hover{
+    width: 20%;
+    color: #e55c53;
+    font-size: 25px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    background-color: #DCDCDC;
+    color: white;
+}
+

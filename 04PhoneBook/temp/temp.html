@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- jquery -->
+    <script src="includes/jquery.min.js"></script>
+
+    <!-- toaster -->
+    <link rel="stylesheet" href="includes/toastr/build/toastr.css">
+    <script src="includes/toastr/toastr.js"></script>
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="includes/uikit-2/css/uikit.css"/>
+    <script src="includes/uikit-2/js/uikit.js"></script>
+    <script src="includes/uikit-2/js/components/notify.js"></script>
+
+    <!-- bootstrap -->
+    <!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">-->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="includes/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+
+    <!-- css hover -->
+    <link rel="stylesheet" href="includes/Hover-master/css/hover-min.css">
+</head>
+<body>
+<div id="mainContainer"><!-- show items container -->
+    <div id="showItemsContainer">
+        <div id="upButtonContainer">
+            <span class="hvr-icon-up"></span>
+        </div>
+        <input type="text" id="searchInput" class="form-control" placeholder="Search for..."><br/>
+
+        <ul id="ulContainerForAllItems">
+        </ul>
+    </div>
+    <div id="createItemsContainer">
+        <!-- buttons container -->
+        <div id="buttonsContainer">
+            <input type="button" id="createGroupButton" class="hvr-shadow   appControllerButtons" value="Add Group">
+            <input type="button" id="createContactButton" class="hvr-shadow   appControllerButtons"
+                   value="Add Contact">
+        </div>
+        <div id="createDataInputs">
+            <!--create contact mode -->
+            <div id="createContact" class="invisible">
+                <h4>Create Contacts</h4>
+                <input type="text" class="appInputForAdding" id="contentFirstName"
+                       placeholder="enter first name..."/>
+                <input type="text" class="appInputForAdding" id="contentLasttName"
+                       placeholder="enter last name..."/>
+                <input type="text" class="appInputForAdding" id="contentPhone" placeholder="enter phone..."/>
+                <input type="button" class="appAddDataButton" id="addContactButton" value="Add Contact">
+            </div>
+            <!--create group mode -->
+            <div id="createGroup">
+                <h4>Create Group</h4>
+                <input type="text" class="appInputForAdding" id="contentCreateGroup"
+                       placeholder="enter group name..."/>
+                <input type="button" class="appAddDataButton" id="addGroupButton" value="Add Group">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!-- helpers -->
+<script src="helpers/domHelpers.js"></script>
+<script src="helpers/dataHelpers.js"></script>
+
+<!-- view -->
+<script src="../Models/UiClass/View.js"></script>
+<script src="../Models/UiClass/Menu.js"></script>
+
+<!-- data -->
+<script src="../Models/Storage.js"></script>
+<script src="../Models/Contact.js"></script>
+<script src="../Models/Group.js"></script>
+
+<!-- app -->
+<script src="app.js"></script>
+
+
+</body>
+</html>
